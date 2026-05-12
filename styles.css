@@ -1,0 +1,255 @@
+:root {
+  --bg: #ffffff;
+  --surface: #fafafa;
+  --border: #e5e5e5;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #1a1a1a;
+  --link: #0a4d8c;
+  --max: 960px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* HERO */
+.hero {
+  padding: 64px 0 48px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  border: 1px solid var(--border);
+}
+
+.hero-text h1 {
+  margin: 0 0 8px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.hero-text .role {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.hero-text .tagline {
+  margin: 0 0 20px;
+  color: var(--muted);
+  max-width: 580px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px 24px;
+  font-size: 0.92rem;
+}
+
+.contact-list .label {
+  display: inline-block;
+  width: 84px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* SECTIONS */
+main section {
+  padding: 48px 0;
+  border-bottom: 1px solid var(--border);
+}
+main section:last-of-type { border-bottom: none; }
+
+h2 {
+  margin: 0 0 28px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+h4 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* JOBS */
+.job {
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+.job:first-of-type { border-top: none; padding-top: 0; }
+
+.job-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.job-date {
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.job-role {
+  margin: 0 0 12px;
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.job ul {
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+
+.job ul li {
+  margin-bottom: 6px;
+}
+
+.stack {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-family: 'Inter', monospace;
+}
+
+/* TECH GRID */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.tech-block {
+  padding: 16px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.tech-block p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+/* LISTS */
+.plain-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plain-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.plain-list li:last-child { border-bottom: none; }
+
+.plain-list .muted {
+  color: var(--muted);
+  margin-left: 8px;
+  font-size: 0.9rem;
+}
+
+/* REFS */
+.ref-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.ref {
+  padding: 16px;
+  border: 1px solid var(--border);
+}
+
+.ref p {
+  margin: 4px 0;
+  font-size: 0.92rem;
+}
+
+.ref .ref-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .hero { padding: 40px 0 32px; }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+  .hero-photo img {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+  }
+  .hero-text h1 { font-size: 1.7rem; }
+  .contact-list { text-align: left; }
+  .job-head { flex-direction: column; }
+}
