@@ -8,13 +8,15 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<div class="scroll-progress" id="scrollProgress"></div>
+
 <div class="topbar">
   <div class="topbar-inner">
-    <div class="topbar-id">~/pablocerglez<span class="blink">_</span></div>
+    <div class="topbar-id"><span class="prompt-symbol">$</span>~/pablocerglez<span class="blink">_</span></div>
     <div class="topbar-status">
       <span><span class="dot"></span>online</span>
       <span>v2026.05</span>
@@ -25,17 +27,25 @@
 
 <header class="hero">
   <div class="container">
-    <div class="hero-meta">full_stack_engineer.init()</div>
+    <div class="hero-meta">system › full_stack_engineer.init()</div>
     <div class="hero-grid">
       <div class="hero-photo">
-        <img src="profile.jpg" alt="Juan Pablo Cervantes González">
+        <div class="hero-photo-frame">
+          <span class="corner tl"></span>
+          <span class="corner tr"></span>
+          <span class="corner bl"></span>
+          <span class="corner br"></span>
+          <img src="profile.jpg" alt="Juan Pablo Cervantes González">
+          <span class="hero-photo-label"><span>›</span> identity.verified</span>
+        </div>
       </div>
       <div class="hero-text">
         <h1>
-          <span class="accent">// identity</span>
-          Juan Pablo<br>Cervantes González
+          <span class="accent-line">// identity</span>
+          <span class="glitch" data-text="Juan Pablo">Juan Pablo</span><br>
+          <span class="glitch" data-text="Cervantes González">Cervantes González</span>
         </h1>
-        <p class="role">&lt;FullStackEngineer years={7}+ /&gt;</p>
+        <p class="role"><span class="bracket">&lt;</span>FullStackEngineer years={7}+ remote={true} /<span class="bracket">&gt;</span></p>
         <p class="tagline">Construyo plataformas web, e-commerce, fintech, automatizaciones e integraciones con IA. Foco en performance, datos en tiempo real y arquitecturas escalables.</p>
         <ul class="contact-list">
           <li><span class="label">tel</span><a href="tel:+523121045254">+52 312 104 5254</a></li>
@@ -50,231 +60,346 @@
   </div>
 </header>
 
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat">
+      <span class="stat-num" data-target="7">0</span><span class="stat-num plus" style="display:inline">+</span>
+      <span class="stat-label">años de experiencia</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="13">0</span>
+      <span class="stat-label">empresas / clientes</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="40">0</span><span class="stat-num plus" style="display:inline">+</span>
+      <span class="stat-label">tecnologías dominadas</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="4">0</span>
+      <span class="stat-label">certificaciones</span>
+    </div>
+  </div>
+</section>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span>React</span><span class="dot-sep">▪</span>
+    <span>Next.js</span><span class="dot-sep">▪</span>
+    <span>TypeScript</span><span class="dot-sep">▪</span>
+    <span>Node.js</span><span class="dot-sep">▪</span>
+    <span>Bun.js</span><span class="dot-sep">▪</span>
+    <span>NestJS</span><span class="dot-sep">▪</span>
+    <span>Python</span><span class="dot-sep">▪</span>
+    <span>Django</span><span class="dot-sep">▪</span>
+    <span>Laravel</span><span class="dot-sep">▪</span>
+    <span>PostgreSQL</span><span class="dot-sep">▪</span>
+    <span>MySQL</span><span class="dot-sep">▪</span>
+    <span>Firebase</span><span class="dot-sep">▪</span>
+    <span>OpenAI</span><span class="dot-sep">▪</span>
+    <span>Claude API</span><span class="dot-sep">▪</span>
+    <span>LangChain</span><span class="dot-sep">▪</span>
+    <span>n8n</span><span class="dot-sep">▪</span>
+    <span>Zapier</span><span class="dot-sep">▪</span>
+    <span>AWS</span><span class="dot-sep">▪</span>
+    <span>Docker</span><span class="dot-sep">▪</span>
+    <span>Stripe</span><span class="dot-sep">▪</span>
+    <span>Mapbox</span><span class="dot-sep">▪</span>
+    <span>Shopify</span><span class="dot-sep">▪</span>
+    <span>Mendix</span><span class="dot-sep">▪</span>
+    <span>Vue</span><span class="dot-sep">▪</span>
+    <span>Angular</span><span class="dot-sep">▪</span>
+    <span>Redux</span><span class="dot-sep">▪</span>
+    <span>React</span><span class="dot-sep">▪</span>
+    <span>Next.js</span><span class="dot-sep">▪</span>
+    <span>TypeScript</span><span class="dot-sep">▪</span>
+    <span>Node.js</span><span class="dot-sep">▪</span>
+    <span>Bun.js</span><span class="dot-sep">▪</span>
+    <span>NestJS</span><span class="dot-sep">▪</span>
+    <span>Python</span><span class="dot-sep">▪</span>
+    <span>Django</span><span class="dot-sep">▪</span>
+    <span>Laravel</span><span class="dot-sep">▪</span>
+    <span>PostgreSQL</span><span class="dot-sep">▪</span>
+    <span>MySQL</span><span class="dot-sep">▪</span>
+    <span>Firebase</span><span class="dot-sep">▪</span>
+    <span>OpenAI</span><span class="dot-sep">▪</span>
+    <span>Claude API</span><span class="dot-sep">▪</span>
+    <span>LangChain</span><span class="dot-sep">▪</span>
+    <span>n8n</span><span class="dot-sep">▪</span>
+    <span>Zapier</span><span class="dot-sep">▪</span>
+    <span>AWS</span><span class="dot-sep">▪</span>
+    <span>Docker</span><span class="dot-sep">▪</span>
+    <span>Stripe</span><span class="dot-sep">▪</span>
+    <span>Mapbox</span><span class="dot-sep">▪</span>
+    <span>Shopify</span><span class="dot-sep">▪</span>
+    <span>Mendix</span><span class="dot-sep">▪</span>
+    <span>Vue</span><span class="dot-sep">▪</span>
+    <span>Angular</span><span class="dot-sep">▪</span>
+    <span>Redux</span><span class="dot-sep">▪</span>
+  </div>
+</div>
+
 <main class="container">
 
 <section id="experiencia">
-  <div class="section-head">
+  <div class="section-head reveal">
     <span class="section-num">[01]</span>
-    <h2>./experiencia_laboral</h2>
+    <h2>experiencia_laboral</h2>
+    <span class="section-meta">13 posiciones · 2018 → 2026</span>
   </div>
 
   <div class="timeline">
 
-    <article class="job">
-      <header class="job-head">
-        <h3>Westribe.com.mx</h3>
-        <span class="job-date">2025.01 → 2026.03</span>
-      </header>
-      <p class="job-role">Sr. Full Stack Developer <span class="sep">·</span> Contratista <span class="sep">·</span> Remote — Colima</p>
-      <ul>
-        <li>EstrenaCasaColima.com: plataforma inmobiliaria con catálogo, mapas interactivos Mapbox y SEO local.</li>
-        <li>Get Castores: sistema logístico con integración GPS, tracking en tiempo real y dashboards analíticos.</li>
-        <li>iapbredcolima.com: plataforma institucional con CMS y automatizaciones.</li>
-        <li>Integración Frameflow + Zoho CRM para flujos operativos y seguimiento de órdenes.</li>
-        <li>Asistentes IA con OpenAI y Claude API, flujos automatizados con n8n.</li>
-      </ul>
-      <p class="stack">Next.js · Bun.js · Mapbox · Python · Django · React · Zoho CRM · n8n · OpenAI · Claude API · GPS · PostgreSQL · AWS</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>Westribe.com.mx</h3>
+          <span class="job-date">2025.01 → 2026.03</span>
+        </header>
+        <p class="job-role">Sr. Full Stack Developer <span class="sep">·</span> Contratista <span class="sep">·</span> Remote — Colima</p>
+        <ul>
+          <li>EstrenaCasaColima.com: plataforma inmobiliaria con catálogo, mapas interactivos Mapbox y SEO local.</li>
+          <li>Get Castores: sistema logístico con integración GPS, tracking en tiempo real y dashboards analíticos.</li>
+          <li>iapbredcolima.com: plataforma institucional con CMS y automatizaciones.</li>
+          <li>Integración Frameflow + Zoho CRM para flujos operativos y seguimiento de órdenes.</li>
+          <li>Asistentes IA con OpenAI y Claude API, flujos automatizados con n8n.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> Next.js · Bun.js · Mapbox · Python · Django · React · Zoho CRM · n8n · OpenAI · Claude API · GPS · PostgreSQL · AWS</p>
+      </div>
     </article>
 
-    <article class="job">
-      <header class="job-head">
-        <h3>G21 Comunicaciones</h3>
-        <span class="job-date">2024.05 → 2024.12</span>
-      </header>
-      <p class="job-role">Full Stack Developer / Tráfico &amp; SEO <span class="sep">·</span> Remote</p>
-      <ul>
-        <li>Sistema principal de Escapadas con React y Node.js (mexicodesconocido.com.mx).</li>
-        <li>Administración de tráfico web, estrategias SEO y optimización de posicionamiento orgánico.</li>
-        <li>Integración de pagos Stripe y automatizaciones n8n para portales de alto tráfico.</li>
-        <li>Infraestructura AWS y DigitalOcean con despliegue continuo.</li>
-      </ul>
-      <p class="stack">React · Node.js · Stripe · AWS · DigitalOcean · n8n · HubSpot · Mailchimp · SEO · Google Analytics · Webflow</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>G21 Comunicaciones</h3>
+          <span class="job-date">2024.05 → 2024.12</span>
+        </header>
+        <p class="job-role">Full Stack Developer / Tráfico &amp; SEO <span class="sep">·</span> Remote</p>
+        <ul>
+          <li>Sistema principal de Escapadas con React y Node.js (mexicodesconocido.com.mx).</li>
+          <li>Administración de tráfico web, estrategias SEO y optimización de posicionamiento orgánico.</li>
+          <li>Integración de pagos Stripe y automatizaciones n8n para portales de alto tráfico.</li>
+          <li>Infraestructura AWS y DigitalOcean con despliegue continuo.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> React · Node.js · Stripe · AWS · DigitalOcean · n8n · HubSpot · Mailchimp · SEO · Google Analytics · Webflow</p>
+      </div>
     </article>
 
-    <article class="job">
-      <header class="job-head">
-        <h3>Media Jet Marketing</h3>
-        <span class="job-date">2024.01 → 2024.04</span>
-      </header>
-      <p class="job-role">Desarrollador Web <span class="sep">·</span> Contratista <span class="sep">·</span> Remote — San Diego, CA</p>
-      <ul>
-        <li>Plataformas de e-commerce con Shopify y WooCommerce.</li>
-        <li>Landing pages en Webflow, Shopify y Mendix optimizadas para conversión.</li>
-        <li>Pruebas A/B y automatizaciones CRM con Zapier y HubSpot.</li>
-      </ul>
-      <p class="stack">Shopify · Webflow · Mendix · Vue · Angular · Mailchimp · Klaviyo · Zapier · HubSpot</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>Media Jet Marketing</h3>
+          <span class="job-date">2024.01 → 2024.04</span>
+        </header>
+        <p class="job-role">Desarrollador Web <span class="sep">·</span> Contratista <span class="sep">·</span> Remote — San Diego, CA</p>
+        <ul>
+          <li>Plataformas de e-commerce con Shopify y WooCommerce.</li>
+          <li>Landing pages en Webflow, Shopify y Mendix optimizadas para conversión.</li>
+          <li>Pruebas A/B y automatizaciones CRM con Zapier y HubSpot.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> Shopify · Webflow · Mendix · Vue · Angular · Mailchimp · Klaviyo · Zapier · HubSpot</p>
+      </div>
     </article>
 
-    <article class="job">
-      <header class="job-head">
-        <h3>Grupo Ethos Pay — Fintech</h3>
-        <span class="job-date">2023.09 → 2023.12</span>
-      </header>
-      <p class="job-role">Full Stack Developer <span class="sep">·</span> Contratista <span class="sep">·</span> Remote — CDMX</p>
-      <ul>
-        <li>Integración sistema bancario SPEI para transferencias en tiempo real.</li>
-        <li>Backend y frontend con Bun.js, Node.js y React. Autenticación con JWT.</li>
-      </ul>
-      <p class="stack">Bun.js · Node.js · React · JWT · SPEI · AWS · Postman · API Documentation</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>Grupo Ethos Pay — Fintech</h3>
+          <span class="job-date">2023.09 → 2023.12</span>
+        </header>
+        <p class="job-role">Full Stack Developer <span class="sep">·</span> Contratista <span class="sep">·</span> Remote — CDMX</p>
+        <ul>
+          <li>Integración sistema bancario SPEI para transferencias en tiempo real.</li>
+          <li>Backend y frontend con Bun.js, Node.js y React. Autenticación con JWT.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> Bun.js · Node.js · React · JWT · SPEI · AWS · Postman · API Documentation</p>
+      </div>
     </article>
 
-    <article class="job">
-      <header class="job-head">
-        <h3>Canvaslab.com</h3>
-        <span class="job-date">2022.07 → 2023.08</span>
-      </header>
-      <p class="job-role">Ingeniero de Software <span class="sep">·</span> Remote — Monterrey</p>
-      <ul>
-        <li>Automatización de procesos en Producción, Admin y Servicio al Cliente con Zoho CRM.</li>
-        <li>Integración Zoho + Zapier + Shopify para operaciones unificadas.</li>
-        <li>Nuevos módulos ERP interno y logística con Mendix.</li>
-      </ul>
-      <p class="stack">JavaScript · React · Ruby · Zoho CRM · Zapier · Shopify · Next.js · Mendix</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>Canvaslab.com</h3>
+          <span class="job-date">2022.07 → 2023.08</span>
+        </header>
+        <p class="job-role">Ingeniero de Software <span class="sep">·</span> Remote — Monterrey</p>
+        <ul>
+          <li>Automatización de procesos en Producción, Admin y Servicio al Cliente con Zoho CRM.</li>
+          <li>Integración Zoho + Zapier + Shopify para operaciones unificadas.</li>
+          <li>Nuevos módulos ERP interno y logística con Mendix.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> JavaScript · React · Ruby · Zoho CRM · Zapier · Shopify · Next.js · Mendix</p>
+      </div>
     </article>
 
-    <article class="job">
-      <header class="job-head">
-        <h3>Intekel Automatización</h3>
-        <span class="job-date">2021.11 → 2022.06</span>
-      </header>
-      <p class="job-role">Full Stack Developer <span class="sep">·</span> Contratista <span class="sep">·</span> Remote — Veracruz</p>
-      <ul>
-        <li>Backend Bluespend con Laravel, MySQL y PostgreSQL.</li>
-        <li>Frontend GAT (Houston, TX) con React, TypeScript y Redux.</li>
-      </ul>
-      <p class="stack">Laravel · React · TypeScript · Redux · MySQL · PostgreSQL · NestJS · Jira</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>Intekel Automatización</h3>
+          <span class="job-date">2021.11 → 2022.06</span>
+        </header>
+        <p class="job-role">Full Stack Developer <span class="sep">·</span> Contratista <span class="sep">·</span> Remote — Veracruz</p>
+        <ul>
+          <li>Backend Bluespend con Laravel, MySQL y PostgreSQL.</li>
+          <li>Frontend GAT (Houston, TX) con React, TypeScript y Redux.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> Laravel · React · TypeScript · Redux · MySQL · PostgreSQL · NestJS · Jira</p>
+      </div>
     </article>
 
-    <article class="job">
-      <header class="job-head">
-        <h3>Gloset.mx</h3>
-        <span class="job-date">2021.06 → 2021.10</span>
-      </header>
-      <p class="job-role">Desarrollador Web <span class="sep">·</span> Remote — Monterrey</p>
-      <ul>
-        <li>Frontend con React integrado con ShareTribe.</li>
-        <li>Backend con Node.js y Firebase para la plataforma Gloset.mx.</li>
-      </ul>
-      <p class="stack">React · TypeScript · Redux · ShareTribe · Bootstrap · Sass · Node.js · Firebase</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>Gloset.mx</h3>
+          <span class="job-date">2021.06 → 2021.10</span>
+        </header>
+        <p class="job-role">Desarrollador Web <span class="sep">·</span> Remote — Monterrey</p>
+        <ul>
+          <li>Frontend con React integrado con ShareTribe.</li>
+          <li>Backend con Node.js y Firebase para la plataforma Gloset.mx.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> React · TypeScript · Redux · ShareTribe · Bootstrap · Sass · Node.js · Firebase</p>
+      </div>
     </article>
 
-    <article class="job">
-      <header class="job-head">
-        <h3>Westribe.com.mx</h3>
-        <span class="job-date">2020.01 → 2021.05</span>
-      </header>
-      <p class="job-role">Líder Técnico <span class="sep">·</span> Remote — Colima</p>
-      <ul>
-        <li>E-commerce: tecnohome.mx, OpenHouze.io, Oiky.mx, M2B.</li>
-        <li>CRMs personalizados con Laravel, React y Next.js.</li>
-      </ul>
-      <p class="stack">PHP · WordPress · Laravel · React · Vue · Next.js · WooCommerce · n8n</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>Westribe.com.mx</h3>
+          <span class="job-date">2020.01 → 2021.05</span>
+        </header>
+        <p class="job-role">Líder Técnico <span class="sep">·</span> Remote — Colima</p>
+        <ul>
+          <li>E-commerce: tecnohome.mx, OpenHouze.io, Oiky.mx, M2B.</li>
+          <li>CRMs personalizados con Laravel, React y Next.js.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> PHP · WordPress · Laravel · React · Vue · Next.js · WooCommerce · n8n</p>
+      </div>
     </article>
 
-    <article class="job">
-      <header class="job-head">
-        <h3>Grupo STI</h3>
-        <span class="job-date">2020.10 → 2021.02</span>
-      </header>
-      <p class="job-role">Desarrollador Node.js <span class="sep">·</span> Contratista <span class="sep">·</span> Remote — Sinaloa</p>
-      <ul>
-        <li>Backend para BanCoppel con Node.js y desarrollo de APIs.</li>
-        <li>Plataforma Fondo Naranja Home Depot e impulsoinmuebles.com.mx con CakePHP.</li>
-      </ul>
-      <p class="stack">Node.js · Express · TypeScript · PHP · CakePHP · Bootstrap · Firebase · Git</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>Grupo STI</h3>
+          <span class="job-date">2020.10 → 2021.02</span>
+        </header>
+        <p class="job-role">Desarrollador Node.js <span class="sep">·</span> Contratista <span class="sep">·</span> Remote — Sinaloa</p>
+        <ul>
+          <li>Backend para BanCoppel con Node.js y desarrollo de APIs.</li>
+          <li>Plataforma Fondo Naranja Home Depot e impulsoinmuebles.com.mx con CakePHP.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> Node.js · Express · TypeScript · PHP · CakePHP · Bootstrap · Firebase · Git</p>
+      </div>
     </article>
 
-    <article class="job">
-      <header class="job-head">
-        <h3>Connect2Drs (Hackademy)</h3>
-        <span class="job-date">2020.02 → 2020.05</span>
-      </header>
-      <p class="job-role">Desarrollador Web / Backend <span class="sep">·</span> Remote — Sinaloa</p>
-      <ul>
-        <li>APIs para consultas médicas, citas y pagos con Django, Twilio y PostgreSQL.</li>
-      </ul>
-      <p class="stack">Python · Django · Twilio · Docker · PostgreSQL · Swagger · Git</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>Connect2Drs (Hackademy)</h3>
+          <span class="job-date">2020.02 → 2020.05</span>
+        </header>
+        <p class="job-role">Desarrollador Web / Backend <span class="sep">·</span> Remote — Sinaloa</p>
+        <ul>
+          <li>APIs para consultas médicas, citas y pagos con Django, Twilio y PostgreSQL.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> Python · Django · Twilio · Docker · PostgreSQL · Swagger · Git</p>
+      </div>
     </article>
 
-    <article class="job">
-      <header class="job-head">
-        <h3>Cluster TIC Colima</h3>
-        <span class="job-date">2019.07 → 2019.12</span>
-      </header>
-      <p class="job-role">Pasante de Desarrollo Web <span class="sep">·</span> Colima</p>
-      <ul>
-        <li>Plataforma web para gestión de parcelas agrícolas con Laravel y MySQL.</li>
-      </ul>
-      <p class="stack">PHP · Laravel · MySQL · WordPress · Spatie · Nginx · Sass · Git</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>Cluster TIC Colima</h3>
+          <span class="job-date">2019.07 → 2019.12</span>
+        </header>
+        <p class="job-role">Pasante de Desarrollo Web <span class="sep">·</span> Colima</p>
+        <ul>
+          <li>Plataforma web para gestión de parcelas agrícolas con Laravel y MySQL.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> PHP · Laravel · MySQL · WordPress · Spatie · Nginx · Sass · Git</p>
+      </div>
     </article>
 
-    <article class="job">
-      <header class="job-head">
-        <h3>LlevaFácil</h3>
-        <span class="job-date">2019.02 → 2019.06</span>
-      </header>
-      <p class="job-role">Desarrollador Web <span class="sep">·</span> Freelance <span class="sep">·</span> Colima</p>
-      <ul>
-        <li>App móvil para entrega de alimentos y portal administrativo con Laravel y MySQL.</li>
-      </ul>
-      <p class="stack">Laravel · MySQL · WordPress · PHP · Nginx · Android Studio · Java · DigitalOcean</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>LlevaFácil</h3>
+          <span class="job-date">2019.02 → 2019.06</span>
+        </header>
+        <p class="job-role">Desarrollador Web <span class="sep">·</span> Freelance <span class="sep">·</span> Colima</p>
+        <ul>
+          <li>App móvil para entrega de alimentos y portal administrativo con Laravel y MySQL.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> Laravel · MySQL · WordPress · PHP · Nginx · Android Studio · Java · DigitalOcean</p>
+      </div>
     </article>
 
-    <article class="job">
-      <header class="job-head">
-        <h3>D10 Digital</h3>
-        <span class="job-date">2018.06 → 2019.01</span>
-      </header>
-      <p class="job-role">Desarrollador Web <span class="sep">·</span> Freelance <span class="sep">·</span> Colima</p>
-      <ul>
-        <li>Sitios web y landing pages para clientes locales y regionales.</li>
-        <li>Mantenimiento de plataformas WordPress y personalización de temas y plugins.</li>
-      </ul>
-      <p class="stack">PHP · WordPress · HTML · CSS · JavaScript · MySQL · Hosting · SEO</p>
+    <article class="job reveal">
+      <div class="job-card">
+        <header class="job-head">
+          <h3>D10 Digital</h3>
+          <span class="job-date">2018.06 → 2019.01</span>
+        </header>
+        <p class="job-role">Desarrollador Web <span class="sep">·</span> Freelance <span class="sep">·</span> Colima</p>
+        <ul>
+          <li>Sitios web y landing pages para clientes locales y regionales.</li>
+          <li>Mantenimiento de plataformas WordPress y personalización de temas y plugins.</li>
+        </ul>
+        <p class="stack"><span class="stack-label">stack ›</span> PHP · WordPress · HTML · CSS · JavaScript · MySQL · Hosting · SEO</p>
+      </div>
     </article>
 
   </div>
 </section>
 
 <section id="tecnologias">
-  <div class="section-head">
+  <div class="section-head reveal">
     <span class="section-num">[02]</span>
-    <h2>./stack_tecnologico</h2>
+    <h2>stack_tecnologico</h2>
+    <span class="section-meta">9 dominios</span>
   </div>
   <div class="tech-grid">
-    <div class="tech-block">
+    <div class="tech-block reveal">
+      <span class="tech-block-num">001</span>
       <h4>frontend</h4>
       <p>React, Vue.js, Angular, Next.js, JavaScript, TypeScript, HTML5, CSS3, SASS, Bootstrap, Redux</p>
     </div>
-    <div class="tech-block">
+    <div class="tech-block reveal">
+      <span class="tech-block-num">002</span>
       <h4>backend</h4>
       <p>Node.js, NestJS, Bun.js, Express, PHP, Laravel, CakePHP, Django, Python, Ruby, REST APIs, JWT</p>
     </div>
-    <div class="tech-block">
+    <div class="tech-block reveal">
+      <span class="tech-block-num">003</span>
       <h4>ia &amp; chatbots</h4>
       <p>OpenAI API, Claude API, LangChain, RAG, Prompts, Flujos conversacionales, Web Scraping</p>
     </div>
-    <div class="tech-block">
+    <div class="tech-block reveal">
+      <span class="tech-block-num">004</span>
       <h4>automatización</h4>
       <p>n8n, Zapier, Make, Webhooks, Cron Jobs, Flujos RPA</p>
     </div>
-    <div class="tech-block">
+    <div class="tech-block reveal">
+      <span class="tech-block-num">005</span>
       <h4>databases</h4>
       <p>MySQL, PostgreSQL, Firebase</p>
     </div>
-    <div class="tech-block">
+    <div class="tech-block reveal">
+      <span class="tech-block-num">006</span>
       <h4>low-code</h4>
       <p>Mendix, Shopify, WooCommerce, WordPress, Webflow</p>
     </div>
-    <div class="tech-block">
+    <div class="tech-block reveal">
+      <span class="tech-block-num">007</span>
       <h4>cloud &amp; devops</h4>
       <p>AWS, DigitalOcean, Docker, Nginx, CI/CD</p>
     </div>
-    <div class="tech-block">
+    <div class="tech-block reveal">
+      <span class="tech-block-num">008</span>
       <h4>crm &amp; tools</h4>
       <p>Zoho, HubSpot, Stripe, Mailchimp, Jira, Postman, Git, Swagger</p>
     </div>
-    <div class="tech-block">
+    <div class="tech-block reveal">
+      <span class="tech-block-num">009</span>
       <h4>methodologies</h4>
       <p>Scrum, Agile, Code Review, A/B Testing, SEO</p>
     </div>
@@ -282,13 +407,14 @@
 </section>
 
 <section id="info">
-  <div class="section-head">
+  <div class="section-head reveal">
     <span class="section-num">[03]</span>
-    <h2>./formacion &amp; credenciales</h2>
+    <h2>formacion &amp; credenciales</h2>
+    <span class="section-meta">edu · cert · lang · hack</span>
   </div>
   <div class="info-grid">
 
-    <div class="info-block">
+    <div class="info-block reveal">
       <h4>education</h4>
       <ul class="plain-list">
         <li>
@@ -297,7 +423,7 @@
         </li>
         <li>
           <strong>Ing. de Sistemas (Intercambio)</strong>
-          <span class="muted">Universidad de Boyacá, Colombia · 2021</span>
+          <span class="muted">U. de Boyacá, Colombia · 2021</span>
         </li>
         <li>
           <strong>Técnico en Programación</strong>
@@ -306,7 +432,7 @@
       </ul>
     </div>
 
-    <div class="info-block">
+    <div class="info-block reveal">
       <h4>certifications</h4>
       <ul class="plain-list flat">
         <li>Scrum Foundations (SFPC) — CertiProf</li>
@@ -316,7 +442,7 @@
       </ul>
     </div>
 
-    <div class="info-block">
+    <div class="info-block reveal">
       <h4>idiomas</h4>
       <div class="lang-item">
         <span class="lang-name">Español</span>
@@ -330,7 +456,7 @@
       </div>
     </div>
 
-    <div class="info-block">
+    <div class="info-block reveal">
       <h4>hackathons</h4>
       <ul class="plain-list flat">
         <li>Supercívicos — Tomato Valley (2020)</li>
@@ -344,18 +470,18 @@
 </section>
 
 <section id="referencias">
-  <div class="section-head">
+  <div class="section-head reveal">
     <span class="section-num">[04]</span>
-    <h2>./referencias</h2>
+    <h2>referencias</h2>
   </div>
   <div class="ref-grid">
-    <div class="ref">
+    <div class="ref reveal">
       <p class="ref-name">Sonia Gastelum Montiel</p>
       <p class="ref-role">Coordinadora · HackAdemy</p>
       <p><a href="tel:+526681160373">+52 668 116 0373</a></p>
       <p><a href="mailto:sonia@hackademy.mx">sonia@hackademy.mx</a></p>
     </div>
-    <div class="ref">
+    <div class="ref reveal">
       <p class="ref-name">Alicia Maldonado</p>
       <p class="ref-role">HR Manager · Davies Imaging Group</p>
       <p><a href="tel:+525537047806">+52 55 3704 7806</a></p>
@@ -365,13 +491,70 @@
 
 </main>
 
+<section class="cta">
+  <div class="container">
+    <div class="reveal">
+      <p>// open_to_work</p>
+      <h2>¿Construimos algo serio?</h2>
+      <div class="cta-buttons">
+        <a class="btn primary" href="mailto:cer11glez@gmail.com">contactar</a>
+        <a class="btn" href="https://github.com/pablocerglez" target="_blank" rel="noopener">github</a>
+        <a class="btn" href="tel:+523121045254">llamar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="container footer-inner">
     <span>&copy; <span id="year"></span> juan_pablo_cervantes_gonzalez</span>
-    <span>build_id: <span class="blink">stable</span> · made with code, not templates</span>
+    <span class="footer-status">
+      <span><span class="blink">●</span> built with code</span>
+      <span>colima.mx</span>
+    </span>
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const progress = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+  progress.style.width = pct + '%';
+}, { passive: true });
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal, .job').forEach(el => io.observe(el));
+
+const counters = document.querySelectorAll('.stat-num[data-target]');
+const counterIo = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    const target = parseInt(el.dataset.target, 10);
+    const duration = 1400;
+    const start = performance.now();
+    const step = (now) => {
+      const t = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = Math.floor(eased * target);
+      if (t < 1) requestAnimationFrame(step);
+      else el.textContent = target;
+    };
+    requestAnimationFrame(step);
+    counterIo.unobserve(el);
+  });
+}, { threshold: 0.4 });
+counters.forEach(c => counterIo.observe(c));
+</script>
 </body>
 </html>
